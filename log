@@ -127,3 +127,29 @@ Fri 23 Sep 2022 04:53:48 PM UTC:
  tests:  17|4
 total_score: 35/70
 e3a7ad6
+Fri 23 Sep 2022 09:28:35 PM UTC: 
+ treemap.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘removeNode’:
+treemap.c:91:5: error: unknown type name ‘TreenNode’; did you mean ‘TreeNode’?
+   91 |     TreenNode* replacement = minimum(node->right);
+      |     ^~~~~~~~~
+      |     TreeNode
+treemap.c:91:30: error: initialization of ‘int *’ from incompatible pointer type ‘TreeNode *’ [-Werror=incompatible-pointer-types]
+   91 |     TreenNode* replacement = minimum(node->right);
+      |                              ^~~~~~~
+treemap.c:92:29: error: request for member ‘pair’ in something not a structure or union
+   92 |     node->pair = replacement->pair;
+      |                             ^~
+treemap.c:93:21: error: passing argument 2 of ‘removeNode’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+   93 |     removeNode(tree,replacement);
+      |                     ^~~~~~~~~~~
+      |                     |
+      |                     int *
+treemap.c:89:43: note: expected ‘TreeNode *’ but argument is of type ‘int *’
+   89 | void removeNode(TreeMap * tree, TreeNode* node) {
+      |                                 ~~~~~~~~~~^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+f018549
