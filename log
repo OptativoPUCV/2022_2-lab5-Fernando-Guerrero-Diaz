@@ -69,3 +69,9 @@ treemap.c:83:5: error: ‘tree’ undeclared (first use in this function); did y
 treemap.c:83:5: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 0ed2d9c
+Fri 23 Sep 2022 04:20:24 PM UTC: 
+ treemap.c | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+ tests:  14|5
+total_score: 15/70
+d801bcd
