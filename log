@@ -81,3 +81,9 @@ Fri 23 Sep 2022 04:21:11 PM UTC:
  tests:  15|4
 total_score: 25/70
 dacb903
+Fri 23 Sep 2022 04:43:08 PM UTC: 
+ treemap.c | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+ tests:  16|4
+total_score: 30/70
+4333a97
