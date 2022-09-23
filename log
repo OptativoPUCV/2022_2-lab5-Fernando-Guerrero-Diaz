@@ -2,3 +2,24 @@ Fri 23 Sep 2022 03:34:40 PM UTC:
  tests:  1|8
 total_score: 0/70
 55f5b92
+Fri 23 Sep 2022 03:57:13 PM UTC: 
+ treemap.c | 35 ++++++++++++++++++++++++++++++++---
+ 1 file changed, 32 insertions(+), 3 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:51:9: error: ‘true’ undeclared (first use in this function); did you mean ‘tree’?
+   51 |   while(true){
+      |         ^~~~
+      |         tree
+treemap.c:51:9: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c:53:20: error: expected expression before ‘,’ token
+   53 |       if (is_equal(,tree,tree->current->pair->key,key)) break;
+      |                    ^
+treemap.c:53:11: error: too many arguments to function ‘is_equal’
+   53 |       if (is_equal(,tree,tree->current->pair->key,key)) break;
+      |           ^~~~~~~~
+treemap.c:22:5: note: declared here
+   22 | int is_equal(TreeMap* tree, void* key1, void* key2){
+      |     ^~~~~~~~
+Compilation failed
+9524f0d
