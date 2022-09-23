@@ -59,7 +59,6 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
         else{
           tree->current->right = new;
           new->parent = tree->current;
-          break;
         }
       }
       else{
@@ -69,7 +68,6 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
         else{
           tree->current->left = new;
           new->parent = tree->current;
-          break;
         }
         
       }
